@@ -4,160 +4,331 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>innoqon login page</title>
+    <title>Login form</title>
+     <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        font-family: 'Inter', sans-serif;
-        /* overflow: hidden; */
+    #container{
+        display: flex;
     }
     .left{
-    background: rgb(218, 194, 220);
-    width:380px;
-    height:650px;
+        width:35%;
+        height: 100vh;
+        /* background: rgb(192, 138, 255); */
+        background:#0A66C2;
+        text-align: center;
+        color: #fff;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     }
-   .left h1{
-    position: absolute;
-    top:170px;
-    left:82px;
-    font-size:30px;
-    font-family: cursive;
-    color: rgba(252, 252, 252, 0.861);
-   }
-   .left h3{
-    position: absolute;
-    top:220px;
-    left:120px;
-    font-size:17px;
-    color: #fff;
-   }
-   .left p{
-    position: absolute;
-    top: 270px;
-    left:65px;
-    color: rgb(255, 255, 255);
-    font-style: italic;
-    margin:5px;
-    font-weight: bold;
-    line-height:23px;
-   }
-   .right{
-    position: absolute;
-    top:80px;
-    left:54%;
-   }
-   .right h1{
-    font-family: 'Inter', sans-serif;
-    font-size:31px;
-    font-style: normal;
-    color: rgb(47, 47, 47);
-    margin-top: 13px;
-    position: absolute;
-    left:17%;
-
-   }
-   input{
-    width:150%;
-    margin: 10px;
-    padding:12px;
-    border:1px solid rgb(192, 192, 192);
-    border-radius:3px;
-    outline: none;
+    .text-left{
+    display: inline-block;
+    flex-wrap: wrap;
     position: relative;
-    top:130px;
-    right:100px;
-   }
-   input:hover{
-   border: 1.4px solid rgb(194, 194, 194);
-   }
- .email{
-    position: relative;
-    top:130px;
-    right:80px;
- }
-.pass{
-    position: relative;
-    top:130px;
-    right:80px;
-}
-.login{
-    margin: 10px;
-     padding: 12px;
-     background-color: rgb(129, 201, 234);
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    position: absolute;
-    top:178%;
-    right:20px;
-    
-}
-.login a{
-   text-decoration: none;
-   color: #fff;
-   font-size: 14px;
-
-}
-.login:hover{
- background-color:rgb(181, 181, 181);
-
-}
-hr{
-   color: rgba(154, 154, 154, 0.737);
-   top: 100%;
-}
-.google{
-    position: absolute;
-    top:230%;
-    right:10px;
-    padding:8px;
+    top:20%;
     margin: 14px;
+    padding: 12px;
+    }
+    .left h1{
+        color: rgb(255, 255, 255);
+        margin-bottom:40px;
+        font-weight:700;
+        
+    }
+    .left h5{
+        color: #fff;
+        margin:20px 0;
+    }
+    .left p{
+        font-weight:400;
+        margin: 10px 0 0 0;
+    }
+
+    .right{
+       /* display:inline-block; */
+       /* justify-content: center; */
+       /* margin-left: 50%; */
+       background: #fff;
+       width:100%;
+       height: 100vh;
+    }
+    .right h1{
+        margin-top:40px;
+        font-weight:600;
+        color: rgb(88, 88, 88);
+        font-size:2.8rem;
+        font-family:'Times New Roman', Times, serif;
+    }
+   .right-text{
+    margin-left:42%;
+    /* margin-top: 30%; */
+   }
+  
+   .right-text input{
+    outline: none;
     border: none;
-    border-radius: 5px;
-    width:100%;
-    background-color: rgba(255, 255, 255, 0.589);
+    border: 1px solid rgb(90, 90, 90);
+    padding:11px 15px;
+    width:27vw;
+    align-items: center;
+    justify-content: center;
+    border-radius:4px;
+    margin: 20px -100px 0 ;
+    margin-top:12%;
+    background:#f0f5ff;
+    font-weight:490;
+   }
+   .right-text button{
+    margin: 0 0 8px 0;
+    font-weight: 400;
+    color: #777;
+   }
+   #otp{
+    outline: none;
+    border: none;
+    border: 1px solid rgb(90, 90, 90);
+    padding:11px 15px;
+    width:27vw;
+    align-items: center;
+    justify-content: center;
+    border-radius:4px;
+   margin-top:5%;
+   margin-left:33%;
+  position: absolute;
+  top: 30%;
+  left: 17%;
+  background:#f0f5ff;
+   }
+   .btn-login{
+    display: block;
+    align-items: center;
+    justify-content: center;
+   position: absolute;
+   top:33%;
+   left:56%;
+   margin-top:8%;
+   padding:9px 60px;
+   outline: none;
+   border: none;
+   background-color:#0A66C2;
+   color: #fff;
+    border-radius:5px;
+    font-size: 18px;
+    font-weight:500;
+   }
+   .btn{
+    border: none;
+    background:#f0f5ff;
+    background: transparent;
+   }
+   hr{
+    position: relative;
+    bottom:258px;
+    width:62%;
+    left:30%;
+    color: rgb(4, 4, 4);
+   }
+   /* .social{
+    display: flex;
+   }
+   .social-links img{
+        width: 80px;
+   }
+   .google a{
+    color:#4285F4;
+    text-decoration: none;
+    text-align: center;
+    font-size: 19px;
+    margin-left:10px;
+
+   }
+   .google img{
+    width:30px;
+   }
+   .social button{
+   border: none;
+   background: #fff;
+   padding: 10px 2% 10px 5px;
+   border-radius: 10px;
+   }
+   .social-links ul{
+    width:43vw;
+    margin: 0;
+    position: absolute;
+    bottom: 20%;
+    left:45%;
+    background: transparent;
+   }
+   .social-links ul li{
+    display: inline;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+   }
+   .link img{
+    width: 110px;
+   } */
+   span{
+    margin-left:26%;
+   position: absolute;
+   top:25%;
+   font-style: oblique;
+   }
+   .copyright{
+    margin-left:44%;
+   position: absolute;
+   top:100%;
+   font-style: oblique;
+   }
+   .logo {
+    position: relative;
+    width:150px;
+    display: inline;
+    border: 10px solid red;
+   }
+   .usingpass{
+    display: flex;
+    /* position: relative; */
+    position: absolute;
+    top:50%;
+    padding: 0 20px 0 20px;
+    width: 100%;
+   }
+   .usingPass{
+   margin-left:56%;
+   margin-top:4%;
+   }
+   .forgotpass{
+    margin-left: 70%;
+    display: none;
+   }
+   .pass{
+    outline: none;
+    border: none;
+    border: 1px solid rgb(90, 90, 90);
+    padding:12px 15px;
+    width:27vw;
+    align-items: center;
+    justify-content: center;
+    border-radius:4px;
+   margin-top:5%;
+   margin-left:33%;
+  position: absolute;
+  top: 30%;
+  left: 14%;
+  background:#f0f5ff;
+  display: none;
+   }
+   .usingotp{
+    margin-left:53%;
+   margin-top:4%;
+   display: none;
+   }
+
+.social-links{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    position: absolute;
+    top:49%;
+    left:27%;
 }
-.google:hover{
-   border: 1px solid rgb(70, 69, 69);
+.social-links img{
+    width:3.5em;
+    padding: 15%;
 }
-.google img{
-   width:23px;
-   float: left;
+.fa-quote-left{
+    font-size: 13px;
+   margin: 5px;
 }
-.google a{
-   text-decoration: none;
-   color:rgba(41, 41, 41, 0.904) ;
-   font-size: 14px;
+.fa-quote-right{
+    font-size: 13px;
+    margin: 5px;
 }
 </style>
 <body>
-    <section class="LOGIN">
-        <div class="left">
-            <h1>Welcome back !</h1>
-            <h3>Glad to help</h3>
 
-            <p>"There is only one thing that matters<br> for us CUSTOMER SATISFACTION".</p>
-        </div>
+    <div id="container">
+   <section class="left">
+    <div class="text-left">
+    <h1>Welcome back !</h1>
+    <h5>Glad to have you here</h4>
+        <p><i class="fa fa-quote-left" aria-hidden="true"></i>CUSTOMERS SATISFACTION IS OUR TOP MOST PROIERITY<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+    </div>
+   </section>
+   <section class="right">
+<div class="right-text">
+   <img src="" alt="logo">
+    <h1>Sign In</h1>
+    <input type="email" name="email" id="emailcheck" placeholder="Email or mobile number">
+    <button class="btn" onclick="myfun()">Get Otp</button></div>
 
-        <div class="right">
-            <img src="" alt="logo">
-            <h1>Sign In</h1>
-            <p class="email"> Email Address</p>
-            <input type="email" name="email" id="email">
-            <p class="pass">Password</p>
-            <input type="password" name="pass" id="pass">
-            <a href="#" class="forgot pass">Forgot Password</a>
+   <span id="show-msg"></span>
+    <button class="btn-login">Sign In</button></div>
+   <input type="password" name="otp" id="otp" placeholder="Enter OTP  ">
+   <span id="show-msg"></span>
+   <input type="password" name="pass" class="pass" id="pass" placeholder="Password  ">
+</div>
+<div class="usingpass">
+    <span class="usingPass" id="sign" onclick="signfun()"><a href="#">Sign in using password</a></span>
 
-            <button class="login"><a href="#">Sign In</a></button>
-           
-            <button class="google"><img src="google.png" alt=""><a href="#">Sign in with Google</a></button>
-        </div>
-        
-    </section>
+    <span class="usingotp" id="OTP" onclick="otpfun()"><a href="#">Sign in using otp</a></span>
+    <span class="forgotpass"><a href="#">Forgot Password</a></span>
+ </div>
+<hr>
+   </section>
+   <section class="social">
+    <div class="social-links">
+        <a href=""><img src="./google.png" alt=""></a>
+        <a href=""><img src="./apple.png" alt=""></a>
+        <a href=""><img src="./linkedin.png" alt=""></a>
+        <a href=""><img src="./facebook.png" alt=""></a>
+        <a href=""><img src="./twitter.png" alt=""></a>
+    </div>
+   <span class="copyright"> © 2022, innoQon Tech Pvt. Ltd. All Rights Reserved.</span>
+   </section>
+   <script>
+    function myfun(){
+        var emailcheck = document.getElementById('emailcheck').value;
+    var pattern = /^[A-Za-z0-9._]{3,}@[A_Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+        if(pattern.test(emailcheck)){
+            document.getElementById('show-msg').innerHTML = "Email verified";
+            document.getElementById('show-msg').style.color = "green";
+        }
+        else if(pattern.test(emailcheck) == 0){
+            document.getElementById('show-msg').innerHTML = "Enter valid Email Id";
+            document.getElementById('show-msg').style.color = "red";
+
+            // document.getElementById('show-msg').style.font-style = "oblique";
+        }
+        else{
+            document.getElementById('show-msg').innerHTML = "Email Id not registered";
+            document.getElementById('show-msg').style.color = "red";
+            return false;
+        }
+    }
+    function signfun(){
+        var sign = document.getElementById('sign').value;
+        document.getElementById('OTP').style.display ="block";
+        document.getElementById('pass').style.display ="block";
+        document.getElementById('sign').style.display="none";
+    }
+
+    function otpfun(){
+        var otp = document.getElementById('otp');
+       document.getElementById('pass').style.display ="none";
+       document.getElementById('otp').style.display = "block";
+       document.getElementById('OTP').style.display ="none";
+       document.getElementById('sign').style.display ="block";
+
+    }
+
+   </script>
+
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
