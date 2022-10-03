@@ -129,46 +129,7 @@
     left:30%;
     color: rgb(4, 4, 4);
    }
-   /* .social{
-    display: flex;
-   }
-   .social-links img{
-        width: 80px;
-   }
-   .google a{
-    color:#4285F4;
-    text-decoration: none;
-    text-align: center;
-    font-size: 19px;
-    margin-left:10px;
-
-   }
-   .google img{
-    width:30px;
-   }
-   .social button{
-   border: none;
-   background: #fff;
-   padding: 10px 2% 10px 5px;
-   border-radius: 10px;
-   }
-   .social-links ul{
-    width:43vw;
-    margin: 0;
-    position: absolute;
-    bottom: 20%;
-    left:45%;
-    background: transparent;
-   }
-   .social-links ul li{
-    display: inline;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-   }
-   .link img{
-    width: 110px;
-   } */
+  
    span{
     margin-left:26%;
    position: absolute;
@@ -207,7 +168,7 @@
     outline: none;
     border: none;
     border: 1px solid rgb(90, 90, 90);
-    padding:11px 15px;
+    padding:12px 15px;
     width:27vw;
     align-items: center;
     justify-content: center;
@@ -247,6 +208,145 @@
 .fa-quote-right{
     font-size: 13px;
     margin: 5px;
+}
+@media (max-width:732px){
+    .left{
+        display: none;
+    }
+}
+/* for right */
+@media(max-width:732px){
+    .right{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-text input{
+    outline: none;
+    border: none;
+    border: 1px solid rgb(90, 90, 90);
+    padding:12px 15px;
+    width:47vw;
+    align-items: center;
+    justify-content: center;
+    border-radius:4px;
+    transform: translateX(42px);
+    margin-top:12%;
+    background:#f0f5ff;
+    font-weight:490;
+   }
+   #otp{
+    outline: none;
+    border: none;
+    border: 1px solid rgb(90, 90, 90);
+    padding:12px 15px;
+    width:47vw;
+    align-items: center;
+    justify-content: center;
+    border-radius:4px;
+    margin-top:5%;
+    margin-left:17%;
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    background:#f0f5ff;
+   }
+
+   .btn-login{
+    display: block;
+    align-items: center;
+    justify-content: center;
+   position: absolute;
+   top:33%;
+   left:43%;
+   margin-top:12%;
+   padding:9px 60px;
+   outline: none;
+   border: none;
+   background-color:#0A66C2;
+   color: #fff;
+    border-radius:5px;
+    font-size: 18px;
+    font-weight:500;
+   }
+   .btn{
+    position: relative;
+    left:48px;
+   }
+   .usingpass{
+    display: flex;
+    /* position: relative; */
+    position: absolute;
+    top:50%;
+    padding: 0 20px 0 20px;
+    width: 100%;
+   }
+   .usingPass{
+   margin-left:42%;
+   margin-top:3%;
+   }
+   .forgotpass{
+    margin-left: 70%;
+    display: none;
+   }
+   .pass{
+    outline: none;
+    border: none;
+    border: 1px solid rgb(90, 90, 90);
+    padding:12px 15px;
+    width:47vw;
+    align-items: center;
+    justify-content: center;
+    border-radius:4px;
+   margin-top:5%;
+   margin-left:20%;
+  position: absolute;
+  top: 30%;
+  background:#f0f5ff;
+  display: none;
+   }
+   .usingotp{
+    margin-left:42%;
+   margin-top:3%;
+   display: none;
+   }
+
+   hr{
+    position: relative;
+    bottom:258px;
+    width:81%;
+    left:10%;
+    color: rgb(4, 4, 4);
+   }
+  
+   .social-links{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    position: absolute;
+    top:61%;
+    left:23%;
+}
+.social-links img{
+    width:3.5em;
+    padding: 15%;
+}
+.fa-quote-left{
+    font-size: 13px;
+   margin: 5px;
+}
+.fa-quote-right{
+    font-size: 13px;
+    margin: 5px;
+}
+.copyright{
+    margin-left:30%;
+    transform: translateY(-80px);
+   font-style: oblique;
+   }
+   
 }
 </style>
 <body>
